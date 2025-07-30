@@ -1,19 +1,19 @@
 	.section .rodata
 
-.global gUnknown_83801A0
-gUnknown_83801A0:
+.global HeaderBossPortraits
+HeaderBossPortraits:
 .string "SIRO"
 .4byte gUnknown_8380AB0
 .incbin "baserom.gba", 0x3801A8, 0x8
-.global gUnknown_83801B0
-gUnknown_83801B0:
+.global ImageBossPortraits
+ImageBossPortraits:
 .incbin "baserom.gba", 0x3801B0, 0x800
 .global gUnknown_83809B0
 gUnknown_83809B0:
 .incbin "baserom.gba", 0x3809B0, 0x100
 .global gUnknown_8380AB0
 gUnknown_8380AB0:
-.4byte gUnknown_83801B0
+.4byte ImageBossPortraits
 .4byte gUnknown_83809B0
 .global gUnknown_8380AB8
 gUnknown_8380AB8:
@@ -21,63 +21,63 @@ gUnknown_8380AB8:
 .global gUnknown_8382884
 gUnknown_8382884:
 .incbin "baserom.gba", 0x382884, 0x380
-.global gUnknown_8382C04
-gUnknown_8382C04:
+.global ImageTitleJP
+ImageTitleJP:
 .incbin "baserom.gba", 0x382C04, 0x1D10
-.global gUnknown_8384914
-gUnknown_8384914:
+.global PaletteTitleJP
+PaletteTitleJP:
 .incbin "baserom.gba", 0x384914, 0x380
 .string "pksdir0\0"
-.global gUnknown_8384C9C
-gUnknown_8384C9C:
+.global ImageLoadBG0
+ImageLoadBG0:
 .incbin "baserom.gba", 0x384C9C, 0x3E34
-.global gUnknown_8388AD0
-gUnknown_8388AD0:
+.global PaletteLoadBG0
+PaletteLoadBG0:
 .incbin "baserom.gba", 0x388AD0, 0x380
-.global gUnknown_8388E50
-gUnknown_8388E50:
+.global ImageLoadBG1
+ImageLoadBG1:
 .string "AT4PX"
 .incbin "baserom.gba", 0x388E55, 0x4143
-.global gUnknown_838CF98
-gUnknown_838CF98:
+.global PaletteLoadBG1
+PaletteLoadBG1:
 .incbin "baserom.gba", 0x38CF98, 0x380
-.global gUnknown_838D318
-gUnknown_838D318:
+.global ImageLoadBG2
+ImageLoadBG2:
 .incbin "baserom.gba", 0x38D318, 0x4928
 .string "pksdir0\0"
-.global gUnknown_8391C48
-gUnknown_8391C48:
+.global PaletteLoadBG2
+PaletteLoadBG2:
 .incbin "baserom.gba", 0x391C48, 0x380
-.global gUnknown_8391FC8
-gUnknown_8391FC8:
+.global HeaderTeamBadge
+HeaderTeamBadge:
 .string "SIRO"
 .4byte gUnknown_8392398
 .incbin "baserom.gba", 0x391FD0, 0x8
-.global gUnknown_8391FD8
-gUnknown_8391FD8:
+.global ImageTeamBadge
+ImageTeamBadge:
 .incbin "baserom.gba", 0x391FD8, 0x380
-.global gUnknown_8392358
-gUnknown_8392358:
+.global PaletteTeamBadge
+PaletteTeamBadge:
 .incbin "baserom.gba", 0x392358, 0x40
 .global gUnknown_8392398
 gUnknown_8392398:
-.4byte gUnknown_8391FD8
-.4byte gUnknown_8392358
-.global gUnknown_83923A0
-gUnknown_83923A0:
+.4byte ImageTeamBadge
+.4byte PaletteTeamBadge
+.global HeaderWifiStrength
+HeaderWifiStrength:
 .string "SIRO"
 .4byte gUnknown_8392630
 .incbin "baserom.gba", 0x3923A8, 0x8
-.global gUnknown_83923B0
-gUnknown_83923B0:
+.global ImageWifiStrength
+ImageWifiStrength:
 .incbin "baserom.gba", 0x3923B0, 0x80
-.global gUnknown_8392430
-gUnknown_8392430:
+.global PaletteWifiStrength
+PaletteWifiStrength:
 .incbin "baserom.gba", 0x392430, 0x200
 .global gUnknown_8392630
 gUnknown_8392630:
-.4byte gUnknown_83923B0
-.4byte gUnknown_8392430
+.4byte ImageWifiStrength
+.4byte PaletteWifiStrength
 .global gUnknown_8392638
 gUnknown_8392638:
 .string "SIRO"
@@ -118,8 +118,8 @@ gUnknown_8392B48:
 .4byte gUnknown_8392828
 .4byte gUnknown_8392878
 .incbin "baserom.gba", 0x392B68, 0x20
-.global gUnknown_8392B88
-gUnknown_8392B88:
+.global ImageFriendAreaMap
+ImageFriendAreaMap:
 .incbin "baserom.gba", 0x392B88, 0x5F0C
 .string "pksdir0\0"
 .global gUnknown_8398A9C
